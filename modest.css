@@ -1,0 +1,518 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container-fluid{
+	width: 100%;
+}
+header{
+	height: 50px;
+	background-color: #1d2126;
+}
+
+header #top{
+	width: 80%;
+	height: 100%;
+	position: relative;
+	margin: 0px auto;
+	line-height: 50px;
+}
+
+header #top ul{
+	position: absolute;
+	list-style: none;
+	top: 0;
+	right: 0px;
+	box-sizing: border-box;
+}
+
+header #top ul li{
+	display: inline-block;
+	text-align: center;
+	margin-right: 3px;
+}
+
+header #top ul a{
+	font-size: 15px;
+	text-decoration: none;
+	font-family: Myriad Pro;
+	color: #a4aead;
+	padding: 5px 12px;
+	border:2px solid transparent;
+}
+
+header #top ul li:first-child a{
+	border:2px solid #23b7a4;
+	color: #23b7a4;
+	border-radius: 5px;
+}
+
+header #top ul li:last-child{
+	margin-right: 0px !important;
+}
+
+header #top ul li a:hover{
+	border:2px solid #a4aead;
+	color: #a4aead !important;
+	border-radius: 5px;
+	transition: all 0.3s;
+	outline: 0;
+}
+
+#banner{
+	height: 500px;
+	position: relative;
+	background-color: #8e869d;
+}
+
+#banner img{
+	height: 500px;
+	width: 100%;
+}
+
+#banner #bannerContent{
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 10%;
+}
+
+#banner #bannerContent #welcome{
+	font-size: 35px;
+	font-family: Myriad Pro;
+	color: white;
+	position: absolute;
+	top: 29%;
+}
+
+#banner #bannerContent #bio{
+	font-size: 17px;
+	font-family: Myriad Pro;
+	color: #ccd0d7;
+	width: 660px;
+	position: absolute;
+	top: 40%;
+}
+
+#banner #bannerContent ul{
+	position: absolute;
+	top: 57%;
+	list-style: none;
+}
+
+#banner #bannerContent a{
+	font-size: 16.5px;
+	text-decoration: none;
+	font-family: Myriad Pro;
+	color: white;
+	border:2px solid white;
+	width: 70px;
+	padding: 9px 20px;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+
+#banner #bannerContent a:hover{
+	background-color: #23b7a4;
+	border:2px solid #23b7a4;
+	transition: all 0.3s;
+}
+
+.borderLeft{
+	width: 80%;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 50px;
+	margin-left: 10%;
+	border-left: 8px solid #e1e6ea;
+}
+
+.borderLeft p{
+	padding-left: 20px;
+	font-family: Myriad Pro;
+	font-size: 27px;
+	color: #292f36;
+	line-height: 37px;
+}
+
+#content{
+	width: 80%;
+	margin: 0px auto;
+	margin-top: 40px;
+	margin-bottom: 80px;
+	display: flex;
+}
+
+#content #contentL{
+	width: 55%;
+	margin-right: 25px;
+}
+
+#content #contentL p{
+	margin-bottom: 30px;
+	font-size: 20px;
+	font-family: Myriad Pro;
+	color: #8d8f92;
+}
+
+#content #contentL #socialLogo img{
+	width: 50px;
+	height: 50px;
+}
+
+#content #contentL #socialLogo img:hover{
+	filter: brightness(110%);
+}
+
+#content #contentR .post{
+	display: flex;
+	margin-bottom: 25px;
+}
+
+#content #contentR .postL{
+	margin-right: 10px;
+}
+
+#content #contentR .postL .num{
+	width: 45px;
+	height: 45px;
+	background-color: #23b7a4;
+	text-align: center;
+}
+
+#content #contentR .postL .num p{
+	font-family: Myriad Pro;
+	font-size: 30px;
+	color: white;
+	padding: 5px;
+}
+
+#content #contentR .postR .title{
+	margin-bottom: 8px;
+	font-family: Myriad Pro;
+	font-size: 25px;
+	color: #292f36;
+}
+#content #contentR .postR .write{
+	width: 400px;
+	font-family: Myriad Pro;
+	font-size: 20px;
+	color: #a4aead;
+}
+
+#theTeam{
+	width: 80%;
+	margin: 0px auto;
+	margin-top: 50px !important;
+}
+
+#theTeam .member{
+	width: 263px;
+	height: 400px;
+	background-color: #e1e6ea;
+	position: relative;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+#theTeam .member:last-child{
+	margin-right: 0px;
+}
+
+#theTeam .member .mask{
+	width: 263px;
+	height: 300px;
+	background-color: #e1e6ea;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	transition: all 0.2s;
+}
+
+#theTeam .member .icon{
+	position: absolute;
+	top: 35%;
+	left: 22%;
+	opacity: 0;
+	transition: all 0.2s;
+}
+
+#theTeam .member .who{
+	font-family: Myriad Pro;
+	font-size: 22px;
+	color: #6d7176;
+	padding: 20px 0px 5px 20px;
+}
+
+#theTeam .member .job{
+	font-family: Myriad Pro;
+	font-size: 18px;
+	color: #a4aead;
+	padding: 0px 0px 0px 20px;
+}
+
+#theTeam .member:hover{
+	background-color: #3a454d;
+}
+
+#theTeam .member:hover .mask{
+	opacity: 0.4;
+}
+
+#theTeam .member:hover .icon{
+	opacity: 1;
+}
+
+#theTeam .member:hover .icon .memberIcon:hover{
+	filter: brightness(125%) !important;
+}
+
+#theTeam .member:hover .who{
+	color: white;
+}
+
+#theTeam .member:hover .job{
+	color: white;
+}
+
+#lovely{
+	background-color: #3a454d;
+	width: 100%;
+	margin-top: 70px;
+	height: 730px;
+	position: relative;
+}
+
+#lovely #lovelyContent{
+	width: 80%;
+	margin-top: 120px;
+	margin-left: 10%;
+	position: absolute;
+}
+
+#lovely #lovelyContent .pic{
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	margin-right: 40px;
+	margin-bottom: 20px;
+}
+
+#lovely #lovelyContent .pic:last-child{
+	margin-right: 0px !important;
+}
+
+#lovely #lovelyContent .pic:nth-child(3){
+	margin-right: 0px !important;
+}
+
+#lovely #lovelyContent .pic img{
+	width: 330px;
+	height: 243px;
+}
+
+#lovely #lovelyContent .pic .plus{
+	position: absolute;
+	top: 35%;
+    left: 45%;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+#lovely #lovelyContent .pic .plus p{
+	font-family: Myriad Pro;
+	font-size: 50px;
+	font-weight: bolder;
+	color:white;
+}
+
+#lovely #lovelyContent .pic .aboutPic{
+	position: absolute;
+	background-color: #292f36;
+	bottom: 4px;
+	width: 100%;
+	height: 50px;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+#lovely #lovelyContent .pic .aboutPic p{
+	font-family: Myriad Pro;
+	font-size: 18px;
+	color:white;
+	padding: 15px 15px;
+}
+
+#lovely #lovelyContent .pic .maskPic{
+	width: 330px;
+	height: 193px;
+	background-color: #333;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+}
+
+#lovely #lovelyContent .pic:hover .maskPic{
+	opacity: 0.5;
+}
+
+#lovely #lovelyContent .pic:hover .plus{
+	opacity: 1;
+}
+
+#lovely #lovelyContent .pic:hover .aboutPic{
+	opacity: 1;
+}
+
+#lovely a{
+	font-size: 15px;
+	text-decoration: none;
+	font-family: Myriad Pro;
+	color: white;
+	border:2px solid white;
+	bottom: 25px;
+	padding: 7px 15px;
+	position: absolute;
+	border-radius: 4px;
+	left: 45%;
+}
+
+#service{
+	width: 80%;
+	margin: 50px 0 0 10%;
+}
+
+#service .item{
+	width: 250px;
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	margin-right: 22px;
+	margin-bottom: 30px;
+}
+
+
+#service .item:nth-child(4){
+	margin-right: 0 !important;
+}
+
+#service .item:last-child{
+	margin-right: 0 !important;
+}
+
+#service .item .itemTit{
+	font-family: Myriad Pro;
+	font-size: 18px;
+	color:#5f5f5f;
+	margin-top: 20px;
+}
+
+#service .item .itemAbout{
+	font-family: Myriad Pro;
+	font-size: 15px;
+	color:#b1b2b4;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+
+#features{
+	background-color: #3a454d;
+	height: 550px;
+	position: relative;
+}
+
+#features #featuresContent{
+	width: 80%;
+	margin-left: 10%;
+	position: absolute;
+	margin-top: 120px;
+}
+
+#features #featuresContent .ftItem{
+	width: 330px;
+	display: inline-block;
+	margin-right: 40px;
+}
+
+#features #featuresContent .ftItem:last-child{
+	margin-right: 0 !important;
+}
+
+#features #featuresContent .ftTit{
+	font-family: Myriad Pro;
+	font-size: 18px;
+	color:white;
+	padding: 15px 0 10px 0;
+}
+
+#features #featuresContent .ftAbout{
+	font-family: Myriad Pro;
+	font-size: 15px;
+	color:#dcdfe1;
+}
+
+#contact{
+	width: 80%;
+	margin-left: 10%;
+	position: relative;
+}
+
+#contact #contactL{
+	position: absolute;
+	left:  0;
+	width: 45%;
+}
+
+#contact #contactR{
+	position: absolute;
+	right:  0;
+	background-color: white;
+	width: 50%;
+	top: -100px;
+	padding: 20px 20px;
+}
+
+#contact #contactR{
+	font-family: Myriad Pro;
+	font-size: 18px;
+	color:#8d8f92;
+	padding: 20px;
+}
+
+#contact #contactR #yn{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#contact #contactR #ye{
+	display: inline-block;
+}
+
+#contact #contactR #ym{
+	margin-left: 10px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+#contact #contactR a{
+	font-size: 15px;
+	text-decoration: none;
+	font-family: Myriad Pro;
+	color: white;
+	background-color: #23b7a4;
+	border:2px solid #23b7a4;
+	bottom: 25px;
+	padding: 7px 15px;
+	border-radius: 4px;
+	margin-left: 10px;
+}
+
+#foot{
+	background-color: #3a454d;
+	height: 100px;
+	margin-top: 240px;
+	position: relative;
+}
